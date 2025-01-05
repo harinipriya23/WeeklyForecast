@@ -4,24 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body{
-  background-image: url(./images/Dclearsky.jpg);
-  background-repeat: no-repeat;
-  background-size:cover ;
-  background-position: center;
-  
-} */
- *, ::after, ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
- }
 body {
   text-transform: capitalize;
+  height: 100%;
+  width: 100%;
+  font-family: 'poppins', sans-serif;
+  color:white
 }
 
 .shadow {
-  box-shadow: 0px 0px 15px 5px rgb(77, 76, 76) ; 
+  box-shadow: 0px 0px 10px 1px  whitesmoke ; 
 } 
 .animate{
   animation: fadeIn 4s;
@@ -29,6 +21,10 @@ body {
 .ani{
   animation: fadeIn 5s;
 }
+.spinner{
+  animation: spin 2s linear infinite;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -43,6 +39,4 @@ body {
       transform:rotate(180deg) ;
     }
   }
-  .spinner{
-    animation: spin 2s linear infinite;
-  }
+ 
